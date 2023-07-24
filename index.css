@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  min-height: 100vh;
+}
+
+.box {
+  background-color: black;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Creates 4 equal-width columns */
+  grid-template-rows: repeat(2, 1fr); /* Creates 4 equal-height rows */
+  gap: 0px; /* Adds a gap between grid items (optional) */
+  /* You can adjust the gap value to your preference */
+  width: 50vw;
+  border-radius: 10px;
+  border: 10px solid black;
+}
+
+.grid-item {
+  /* Add any styling you want for each grid item */
+  text-align: center;
+  background-color: #f0f0f0;
+  display: grid;
+  border-radius: 10px;
+  grid-template-columns: repeat(2, 1fr); /* Creates 4 equal-width columns */
+  grid-template-rows: repeat(2, 1fr); /* Creates 4 equal-height rows */
+}
+
+.inner-grid-item {
+  padding: 10px;
+  border: 1px solid black;
+}
+
+.top-left {
+  border-radius: 10px 0 0 0;
+}
+
+.top-right {
+  border-radius: 0 10px 0 0;
+}
+
+.bottom-left {
+  border-radius: 0 0 0 10px;
+}
+
+.bottom-right {
+  border-radius: 0 0 10px 0;
+}
